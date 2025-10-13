@@ -1,34 +1,52 @@
 ---
 layout: about
-title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+title: BLACKOUT
+subtitle: Data-Oblivious Computation with Blinded Capabilities
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+# profile:
+#   align: right
+#   image: prof_pic.jpg
+#   image_circular: false # crops the image to make it circular
+#   more_info: >
+#     <p>555 your office number</p>
+#     <p>123 your address street</p>
+#     <p>Your City, State 12345</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<!-- # BLACKOUT: Data-Oblivious Computation with Blinded Capabilities -->
+<!-- # Data-Oblivious Computation with Blinded Capabilities -->
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<br>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+#### Overview
+
+Lack of memory-safety and exposure to side channels are two prominent, persistent challenges for the secure implementation of software. Memory-safe programming languages promise to significantly reduce the prevalence of memory-safety bugs, but make it more difficult to implement side-channel-resistant code. We aim to address both memory-safety and side-channel resistance by augmenting memory-safe hardware with the ability for data-oblivious programming. We describe an extension to the CHERI capability architecture to provide blinded capabilities that allow data-oblivious computation to be carried out by userspace tasks. We also present BLACKOUT, our realization of blinded capabilities on a FPGA softcore based on the speculative out-of-order CHERI-Toooba processor and extend the CHERI-enabled Clang/LLVM compiler and the CheriBSD operating system with support for blinded capabilities. BLACKOUT makes writing side-channel-resistant code easier by making non-data-oblivious operations via blinded capabilities explicitly fault. Through rigorous evaluation we show that BLACKOUT ensures memory operated on through blinded capabilities is securely allocated, used, and reclaimed and demonstrate that, in benchmarks comparable to those used by previous work, BLACKOUT imposes only a small performance degradation (1.5% geometric mean) compared to the baseline CHERI-Toooba processor. 
+
+#### Publications
+
+<div class="publications">
+  {% bibliography -f {{ site.scholar.bibliography }} --group_by none --query @*[selected]* %}
+</div>
+
+<!-- ### Blog posts
+
+- BliMe: NDSS'24 [talk](https://youtu.be/cfyvaW1wwQk?si=TuICEfLogqUjTgAp), [pdf](/assets/pdf/platsec/BliMe-NDSS24-slides.pdf)
+- Dolma: HOST'24 [poster](/assets/pdf/platsec/Dolma-HOST24-poster.pdf) -->
+
+#### Source code
+
+- [CCS'25 Artifact](https://zenodo.org/records/17035867?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImM3YmNkOWYxLTY1NGQtNDdjMy1hY2Q3LWM1MjE2YmRkMmNjMyIsImRhdGEiOnt9LCJyYW5kb20iOiJhNzdiMGY5N2VjYjU4ZDdhYzU4MDk3NzI1NjkxNDYxYyJ9.CscvIsUJ7mMT8avu_DqRjKBe5al9n8-kFrOQYoGujwAVWPk60ZTOE_RNyfnCniQCpA3BTSoE7eB0QjPSeqxNQA)
