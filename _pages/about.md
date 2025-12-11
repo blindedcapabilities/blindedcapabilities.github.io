@@ -50,6 +50,10 @@ Lack of memory-safety and exposure to side channels are two prominent, persisten
 #### Blog posts
 - [SSG](https://blog.ssg.aalto.fi/2025/10/making-software-both-memory-safe-and.html)
 
+#### Presentations
+- CCS'25 [Video](https://youtu.be/YcWzuwbvdic?si=ku5a_CuW7N88KgJx), [Slides](assets/pdf/CCS25.pdf)
+
 #### Source code
 
 - [CCS'25 Artifact](https://zenodo.org/records/17035867?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImM3YmNkOWYxLTY1NGQtNDdjMy1hY2Q3LWM1MjE2YmRkMmNjMyIsImRhdGEiOnt9LCJyYW5kb20iOiJhNzdiMGY5N2VjYjU4ZDdhYzU4MDk3NzI1NjkxNDYxYyJ9.CscvIsUJ7mMT8avu_DqRjKBe5al9n8-kFrOQYoGujwAVWPk60ZTOE_RNyfnCniQCpA3BTSoE7eB0QjPSeqxNQA)
+- [GitHub Repos](https://github.com/blindedcapabilities)
